@@ -1,0 +1,27 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Arial,sans-serif}
+:root{--blue:#0b3d91;--gold:#f9a825;--light:#f5f8ff}
+body{background:#fff;color:#333;line-height:1.6}
+a{text-decoration:none}
+header{background:var(--blue);color:#fff;padding:18px 6%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:1000;box-shadow:0 2px 10px rgba(0,0,0,.2)}
+.logo{font-weight:800;font-size:22px;letter-spacing:1px}.logo span{color:var(--gold)}
+nav a{color:#fff;margin-left:22px;font-weight:600;font-size:14px;transition:.3s}
+nav a:hover, nav a.active{color:var(--gold)}
+.hero{background:linear-gradient(105deg,var(--blue) 60%, #123a7a);color:#fff;padding:90px 6%;display:flex;flex-wrap:wrap;align-items:center;gap:30px}
+.hero-text{flex:1;min-width:300px}.hero-text h1{font-size:46px;line-height:1.1}.hero-text h1 span{color:var(--gold)}
+.hero-text p{margin:15px 0 20px;font-size:18px;opacity:.9}
+.btn{background:var(--gold);color:#000;padding:12px 28px;border:none;border-radius:30px;font-weight:700;cursor:pointer;display:inline-block}
+.btn-outline{background:transparent;border:2px solid #fff;color:#fff;margin-left:10px}
+section{padding:70px 6%}.title{text-align:center;color:var(--blue);font-size:32px;font-weight:800}
+.subtitle{text-align:center;max-width:700px;margin:10px auto 40px;color:#666}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px}
+.card{background:#fff;padding:25px;border-radius:14px;box-shadow:0 8px 20px rgba(0,0,0,.06);border-top:4px solid var(--blue)}
+.card h3{color:var(--blue);margin-bottom:8px}
+.page-header{background:var(--light);text-align:center;padding:60px 6%}
+.page-header h1{color:var(--blue);font-size:38px}
+.form-box{max-width:500px;margin:0 auto;background:#fff;padding:30px;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.08)}
+input,textarea,select{width:100%;padding:12px;margin:9px 0;border:1px solid #ccc;border-radius:8px;font-size:14px}
+footer{background:#061e47;color:#ccc;text-align:center;padding:30px 6%;margin-top:40px}
+.hidden{display:none}
+.dashboard{max-width:650px;margin:0 auto;background:#fff;padding:30px;border-radius:14px;text-align:center;box-shadow:0 10px 30px rgba(0,0,0,.08)}
+table{width:100%;border-collapse:collapse;margin-top:15px}th,td{border:1px solid #ddd;padding:10px;text-align:left}th{background:var(--blue);color:#fff}
+@media(max-width:768px){.hero-text h1{font-size:32px}header{flex-direction:column;gap:10px}}
